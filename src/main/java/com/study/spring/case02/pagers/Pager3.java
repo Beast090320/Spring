@@ -1,4 +1,4 @@
-package com.study.spring.case02;
+package com.study.spring.case02.pagers;
 
 public class Pager3 {
 	private Integer id;

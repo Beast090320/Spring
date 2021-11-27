@@ -1,6 +1,6 @@
-package com.study.spring.case02;
+package com.study.spring.case02.pagers;
 
-public class Color {
+public class Size {
 	private Integer id;
 	private String name;
 	
@@ -18,6 +18,6 @@ public class Color {
 	}
 	@Override
 	public String toString() {
-		return "Color [id=" + id + ", name=" + name + "]";
+		return "Size [id=" + id + ", name=" + name + "]";
 	}
 }

@@ -1,4 +1,4 @@
-package case02;
+package case02.pagers;
 
 import java.util.Arrays;
 
@@ -6,9 +6,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.study.spring.case01.TurnOn;
-import com.study.spring.case02.Pager;
-import com.study.spring.case02.Pager2;
-import com.study.spring.case02.Pager3;
+import com.study.spring.case02.pagers.Pager;
+import com.study.spring.case02.pagers.Pager2;
+import com.study.spring.case02.pagers.Pager3;
 
 
 public class Test1 {
