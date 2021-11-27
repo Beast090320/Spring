@@ -110,5 +110,7 @@
 	
 	<bean id="car" scope="prototype" class="com.study.spring.case02.motor.CarFactory" />
 	
+	<bean id="mystock" scope="prototype" class="com.study.spring.case02.stock.MyStockFactory" />
+	
 </beans>
 
