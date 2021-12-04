@@ -1,7 +1,6 @@
 package com.study.spring.case02.classroom;
 
 import java.util.Set;
-import java.util.function.ToIntFunction;
 
 public class Student {
 	private Integer id;
@@ -34,7 +33,7 @@ public class Student {
 	
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", clazzs=" + clazzs + "]";
+ 		return "Student [id=" + id + ", name=" + name + ", clazzs=" + clazzs + "]";
 	}
 	
 	

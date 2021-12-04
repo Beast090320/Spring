@@ -1,7 +1,6 @@
 package case02.classroom;
 
 import java.util.Arrays;
-import java.util.function.ToDoubleBiFunction;
 import java.util.function.ToDoubleFunction;
 import java.util.function.ToIntFunction;
 
@@ -50,6 +49,7 @@ public class Test1 {
 		//重構2-Teacher.java---------------------------------------------------------------------------------------------------------------
 		int total3 = teacher1.getTotalByStudentCredit();
 		System.out.println("Total3 = " + total3);
+		((ClassPathXmlApplicationContext)ctx).close();
 
 	}
 

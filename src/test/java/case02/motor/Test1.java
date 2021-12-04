@@ -1,16 +1,9 @@
 package case02.motor;
 
-import java.util.Arrays;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.study.spring.case01.TurnOn;
 import com.study.spring.case02.motor.Car;
-import com.study.spring.case02.motor.CarFactory;
-import com.study.spring.case02.pagers.Pager;
-import com.study.spring.case02.pagers.Pager2;
-import com.study.spring.case02.pagers.Pager3;
 
 
 public class Test1 {
@@ -23,6 +16,8 @@ public class Test1 {
 		
 		Car car2 = (Car)ctx.getBean("car");
 		System.out.println(car2);
+		((ClassPathXmlApplicationContext)ctx).close();
+
 	}
 	
 }

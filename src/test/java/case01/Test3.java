@@ -15,7 +15,8 @@ public class Test3 {
 		Lotto lotto2 = ctx.getBean("lotto", Lotto.class);
 		System.out.println(lotto2.getNumber());
 		
-		
+		((ClassPathXmlApplicationContext)ctx).close();
+
 		
 		
 	}

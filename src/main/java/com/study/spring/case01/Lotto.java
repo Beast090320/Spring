@@ -21,8 +21,8 @@ public class Lotto {
 			return numbers;
 		}
 
-		public void setNumber(Set<Integer> number) {
-			this.numbers = numbers;
+		public void setNumber(Set<Integer> numbers) {
+	 		this.numbers = numbers;
 		}
 		
 		

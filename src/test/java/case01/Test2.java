@@ -30,7 +30,8 @@ public class Test2 {
 		Author a5 = ctx.getBean("author5", Author.class);
 		System.out.println(a5);
 		
-		
+		((ClassPathXmlApplicationContext)ctx).close();
+
 	}
 	
 }

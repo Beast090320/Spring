@@ -1,15 +1,8 @@
 package case02.stock;
 
-import java.util.Arrays;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.study.spring.case01.TurnOn;
-import com.study.spring.case02.motor.Car;
-import com.study.spring.case02.pagers.Pager;
-import com.study.spring.case02.pagers.Pager2;
-import com.study.spring.case02.pagers.Pager3;
 import com.study.spring.case02.stock.MyStock;
 
 
@@ -20,6 +13,8 @@ public class Test1 {
 		ApplicationContext ctx = new  ClassPathXmlApplicationContext("applicationContext2.xml");
 		MyStock myStock = (MyStock)ctx.getBean("mystock");
 		System.out.println(myStock);
+		((ClassPathXmlApplicationContext)ctx).close();
+
 	}
 	
 }

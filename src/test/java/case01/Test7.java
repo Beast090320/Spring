@@ -1,7 +1,5 @@
 package case01;
 
-import java.util.Arrays;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,7 +14,7 @@ public class Test7 {
 		TurnOn turnOn = ctx.getBean(TurnOn.class);
 		turnOn.play();
 		
-		((ClassPathXmlApplicationContext)ctx).close();
+	 	((ClassPathXmlApplicationContext)ctx).close();
 	}
 	
 }

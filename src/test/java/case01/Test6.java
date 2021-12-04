@@ -22,6 +22,9 @@ public class Test6 {
 		};
 		
 		Arrays.stream(animals).forEach(Animal::printName);
+		
+		((ClassPathXmlApplicationContext)ctx).close();
+
 	}
 
 
