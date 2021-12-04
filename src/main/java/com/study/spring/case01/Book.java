@@ -10,11 +10,11 @@ public class Book {
 	}
 	
 	public Book(String name, Integer price, Author author) {
-		super();
 		this.name = name;
 		this.price = price;
 		this.author = author;
 	}
+	
 	public String getName() {
 		return name;
 	}
@@ -39,4 +39,4 @@ public class Book {
 	}
 	
 	
-}
+}	

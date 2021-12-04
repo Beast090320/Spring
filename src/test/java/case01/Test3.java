@@ -9,16 +9,13 @@ public class Test3 {
 	
 	public static void main(String[] args) {
 		ApplicationContext ctx = new  ClassPathXmlApplicationContext("applicationContext.xml");
-		
 		Lotto lotto = ctx.getBean("lotto", Lotto.class);
-		System.out.println(lotto.getNumber());
+		System.out.println(lotto.getNumbers());
+		
 		Lotto lotto2 = ctx.getBean("lotto", Lotto.class);
-		System.out.println(lotto2.getNumber());
+		System.out.println(lotto2.getNumbers());
 		
 		((ClassPathXmlApplicationContext)ctx).close();
-
-		
-		
 	}
 	
 }

@@ -9,9 +9,8 @@ public class Pager3 {
 		
 	}
 
-	public Pager3(Color color, Size size) {
-		super();
-		this.color = color;
+	public Pager3(Color redColor, Size size) {
+		this.color = redColor;
 		this.size = size;
 	}
 
@@ -44,8 +43,6 @@ public class Pager3 {
 		return "Pager3 [id=" + id + ", color=" + color + ", size=" + size + "]";
 	}
 	
-	
-
 	
 	
 }

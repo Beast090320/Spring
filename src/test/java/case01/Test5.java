@@ -7,11 +7,12 @@ import com.study.spring.case01.Husband;
 import com.study.spring.case01.Wife;
 
 public class Test5 {
-	// 載入配置檔會將所有的 <bean scope="singleton"> 標籤內實例化，無論程式碼是否有用到
-	// <bean scope="prototype"> 則不會實例化
+	
 	public static void main(String[] args) {
+		// 載入配置檔會將所有的 <bean scope="singleton"> 標籤內容實例化, 不論程式碼是否有用到
+		// <bean scope="prototype"> 則不會預先實例化
 		ApplicationContext ctx = new  ClassPathXmlApplicationContext("applicationContext.xml");
-			
+		
 		Husband h1 = ctx.getBean("husband", Husband.class);
 		System.out.println(h1);
 		
@@ -26,10 +27,8 @@ public class Test5 {
 		
 		System.out.println(h1.getName());
 		System.out.println(h1.getWife().getHusband().getName());
+		
 		((ClassPathXmlApplicationContext)ctx).close();
-
 	}
-
-
 	
 }

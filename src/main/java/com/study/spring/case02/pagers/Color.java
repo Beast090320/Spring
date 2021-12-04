@@ -20,4 +20,6 @@ public class Color {
 	public String toString() {
 		return "Color [id=" + id + ", name=" + name + "]";
 	}
+	
+	
 }

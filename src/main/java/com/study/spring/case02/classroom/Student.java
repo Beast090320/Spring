@@ -28,12 +28,11 @@ public class Student {
 	
 	public int getTotalCredits() {
 		return getClazzs().stream().mapToInt(c -> c.getCredit()).sum();
-		
 	}
 	
 	@Override
 	public String toString() {
- 		return "Student [id=" + id + ", name=" + name + ", clazzs=" + clazzs + "]";
+		return "Student [id=" + id + ", name=" + name + ", clazzs=" + clazzs + "]";
 	}
 	
 	

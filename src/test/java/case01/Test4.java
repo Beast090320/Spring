@@ -4,11 +4,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.study.spring.case01.Book;
+
 public class Test4 {
 	
 	public static void main(String[] args) {
 		ApplicationContext ctx = new  ClassPathXmlApplicationContext("applicationContext.xml");
-		
 		Book b1 = ctx.getBean("book", Book.class);
 		System.out.println(b1);
 		
@@ -20,10 +20,8 @@ public class Test4 {
 		
 		Book b4 = ctx.getBean("book4", Book.class);
 		System.out.println(b4);
+		
 		((ClassPathXmlApplicationContext)ctx).close();
-
 	}
-
-
 	
 }

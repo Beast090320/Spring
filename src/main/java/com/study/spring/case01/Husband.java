@@ -5,21 +5,18 @@ public class Husband {
 	private Wife wife;
 	
 	public Husband() {
-		System.out.println("建立 husband 物件");
+		System.out.println("建立 Husband 物件");
 	}
 	
 	public Husband(String name) {
 		this.name = name;
-		System.out.println("建立 husband 物件");
-
+		System.out.println("建立 Husband 物件");
 	}
 	
 	public Husband(String name, Wife wife) {
-		super();
 		this.name = name;
 		this.wife = wife;
-		System.out.println("建立 husband 物件");
-
+		System.out.println("建立 Husband 物件");
 	}
 
 	public String getName() {
@@ -42,5 +39,7 @@ public class Husband {
 	public String toString() {
 		return "Husband [name=" + name + ", wife=" + wife.getName() + "]";
 	}
+	
+	
 	
 }

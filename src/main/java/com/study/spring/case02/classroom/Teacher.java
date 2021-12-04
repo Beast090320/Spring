@@ -43,7 +43,9 @@ public class Teacher {
 	}
 	
 	public int getTotalByStudentCredit() {
-		return getStudents().stream().mapToInt(s ->s.getTotalCredits()).sum();
+		return getStudents().stream()
+				.mapToInt(s -> s.getTotalCredits())
+				.sum();
 	}
 	
 	@Override

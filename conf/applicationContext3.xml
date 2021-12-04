@@ -15,8 +15,8 @@
 	
 	<bean class="com.study.spring.case03.ExchangeHandler" />
 	
-	<!-- 資源文件的加載 -->
-	<!--  
+	<!-- 資源文件的加載  -->
+	<!-- 
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location" value="cash.properties" />
 	</bean>
@@ -28,4 +28,5 @@
 	/>
 	
 </beans>
+
 

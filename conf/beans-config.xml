@@ -9,11 +9,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 	
-	<bean id="roundBean" class="com.study.spring.lab.RoundBeanImpl" 
-		p:radius="10" 
-	/>
-	
-	
+	<bean id="roundBean" class="com.study.spring.lab.RoundBeanImpl" p:radius="10" />
 	
 </beans>
+
 

@@ -6,16 +6,17 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
+
 // 僅供物件建立前所設定的初始資料
-public class ExchangeHandler implements BeanPostProcessor{
+public class ExchangeHandler implements BeanPostProcessor {
 
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		System.out.println("postProcessBeforeInitialization");
 		if(bean instanceof Cash) {
 			Cash cash = (Cash)bean;
-			System.out.println("ExchangeHandler begin :" + cash);
-			// 進行換匯
+			System.out.println("ExchangeHandler begin: " + cash);
+			// 換匯
 			String symbol = cash.getCurrency().concat("TWD=x"); // Ex: USDTWD=x
 			try {
 				Stock stock = YahooFinance.get(symbol); // 取得換匯標的物件
@@ -25,11 +26,9 @@ public class ExchangeHandler implements BeanPostProcessor{
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			
-			System.out.println("ExchangeHandler end :" + cash);
+			System.out.println("ExchangeHandler end: " + cash);
 			return cash;
 		}
-		
 		return bean;
 	}
 
@@ -43,5 +42,5 @@ public class ExchangeHandler implements BeanPostProcessor{
 		}
 		return bean;
 	}
-	
+
 }

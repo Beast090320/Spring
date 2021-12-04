@@ -4,7 +4,7 @@ import java.util.Random;
 
 import org.springframework.beans.factory.FactoryBean;
 
-public class CarFactory implements FactoryBean<Car>{
+public class CarFactory implements FactoryBean<Car> {
 
 	@Override
 	public Car getObject() throws Exception {
@@ -16,14 +16,13 @@ public class CarFactory implements FactoryBean<Car>{
 
 	@Override
 	public Class<?> getObjectType() {
-		
 		return Car.class;
 	}
-	// 若與 <bean scope="prototype" | "singleton"> 有衝突
+	
+	// 若與 <bean score="prototype|singleton"> 有衝突
 	// 設定 prototype 權限 > singleton 權限
 	@Override
 	public boolean isSingleton() {
-		
 		return true;
 	}
 	

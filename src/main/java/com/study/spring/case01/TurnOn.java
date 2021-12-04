@@ -1,12 +1,10 @@
 package com.study.spring.case01;
 
-
 // 開燈/關燈
 public class TurnOn {
 	
 	public TurnOn() {
-	
-		System.out.println("TurnOn 建構子 : 我想要買燈");
+		System.out.println("TurnOn 建構子: 我想要開燈");
 	}
 	
 	public void init() {
@@ -16,11 +14,11 @@ public class TurnOn {
 	}
 	
 	public void play() {
-		System.out.println("燈開了");
+		System.out.println("把燈開了");
 	}
-
+	
 	public void destroy() {
 		System.out.println("把燈關閉");
 	}
-
+	
 }

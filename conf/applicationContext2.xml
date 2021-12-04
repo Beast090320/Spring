@@ -108,9 +108,10 @@
 	<bean id="teacher1" class="com.study.spring.case02.classroom.Teacher"
 		p:id="301" p:name="Bob" p:students-ref="students" p:subjects-ref="subjects" p:salary-ref="salary" />
 	
-	<bean id="car" scope="prototype" class="com.study.spring.case02.motor.CarFactory" />
+	<bean id="car" class="com.study.spring.case02.motor.CarFactory" />
 	
-	<bean id="mystock" scope="prototype" class="com.study.spring.case02.stock.MyStockFactory" />
+	<bean id="myStock" class="com.study.spring.case02.stock.MyStockFactory" />
 	
 </beans>
+
 

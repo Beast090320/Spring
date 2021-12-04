@@ -3,7 +3,7 @@ package com.study.spring.case03;
 public class Cash {
 	private int amount; // 金額
 	private String currency; // 幣別
-	private int twd; // 台幣幣值(TWD)
+	private int twd; // 台幣價值(TWD)
 	
 	public Cash() {
 		
@@ -18,17 +18,9 @@ public class Cash {
 		return amount;
 	}
 
-	/*public void setAmount(int amount) {
-		this.amount = amount;
-	}*/
-
 	public String getCurrency() {
 		return currency;
 	}
-
-	/*public void setCurrency(String currency) {
-		this.currency = currency;
-	}*/
 
 	public int getTwd() {
 		return twd;
@@ -42,5 +34,6 @@ public class Cash {
 	public String toString() {
 		return "Cash [amount=" + amount + ", currency=" + currency + ", twd=" + twd + "]";
 	}
+	
 	
 }

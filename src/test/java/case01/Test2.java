@@ -31,7 +31,6 @@ public class Test2 {
 		System.out.println(a5);
 		
 		((ClassPathXmlApplicationContext)ctx).close();
-
 	}
 	
 }

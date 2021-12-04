@@ -5,9 +5,7 @@ import java.io.Serializable;
 import org.springframework.stereotype.Component;
 
 @Component
-public class User implements Serializable{
-	
-	
+public class User implements Serializable {
 	private String name;
 	private int age;
 	
@@ -17,11 +15,10 @@ public class User implements Serializable{
 	}
 	
 	public User() {
-		
+	
 	}
 	
 	public User(String name, int age) {
-		
 		this.name = name;
 		this.age = age;
 	}
@@ -38,7 +35,6 @@ public class User implements Serializable{
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", age=" + age + "]";

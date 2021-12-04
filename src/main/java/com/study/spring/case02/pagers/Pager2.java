@@ -2,33 +2,31 @@ package com.study.spring.case02.pagers;
 
 public class Pager2 {
 	private Integer id;
-	private Color redcolor;
-	private Size b5size;
+	private Color redColor;
+	private Size b5Size;
+	
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public Color getRedcolor() {
-		return redcolor;
+	public Color getRedColor() {
+		return redColor;
 	}
-	public void setRedcolor(Color redcolor) {
-		this.redcolor = redcolor;
+	public void setRedColor(Color redColor) {
+		this.redColor = redColor;
 	}
-	public Size getB5size() {
-		return b5size;
+	public Size getB5Size() {
+		return b5Size;
 	}
-	public void setB5size(Size b5size) {
-		this.b5size = b5size;
+	public void setB5Size(Size b5Size) {
+		this.b5Size = b5Size;
 	}
 	@Override
 	public String toString() {
-		return "Pager2 [id=" + id + ", redcolor=" + redcolor + ", b5size=" + b5size + "]";
+		return "Pager2 [id=" + id + ", redColor=" + redColor + ", b5Size=" + b5Size + "]";
 	}
-	
-	
-
-	
+		
 	
 }

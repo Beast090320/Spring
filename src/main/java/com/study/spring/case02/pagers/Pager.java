@@ -5,7 +5,6 @@ public class Pager {
 	private Color color;
 	private Size size;
 	
-	
 	public Integer getId() {
 		return id;
 	}
@@ -24,6 +23,7 @@ public class Pager {
 	public void setSize(Size size) {
 		this.size = size;
 	}
+	
 	@Override
 	public String toString() {
 		return "Pager [id=" + id + ", color=" + color + ", size=" + size + "]";

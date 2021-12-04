@@ -5,11 +5,10 @@ import org.springframework.beans.factory.FactoryBean;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
-public class MyStockFactory implements FactoryBean<MyStock>{
+public class MyStockFactory implements FactoryBean<MyStock> {
 
 	@Override
 	public MyStock getObject() throws Exception {
-		
 		Stock stock = YahooFinance.get("INTC");
 		Double price = stock.getQuote().getPrice().doubleValue();
 		MyStock myStock = new MyStock();
@@ -20,7 +19,6 @@ public class MyStockFactory implements FactoryBean<MyStock>{
 
 	@Override
 	public Class<?> getObjectType() {
-		
 		return MyStock.class;
 	}
 
@@ -28,5 +26,5 @@ public class MyStockFactory implements FactoryBean<MyStock>{
 	public boolean isSingleton() {
 		return false;
 	}
-	
+
 }
