@@ -3,6 +3,9 @@ package case04;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.study.spring.case04.mvc.controller.UserController;
+import com.study.spring.case04.mvc.entity.User;
+
 public class Test1 {
 	
 	public static void main(String[] args) {
@@ -10,9 +13,9 @@ public class Test1 {
 		
 		UserController userController = ctx.getBean(UserController.class);
 		System.out.println(userController);
-		userController.create(new User("John", 20));
-		System.out.println(userController.queryUsers());
 		
+		userController.create(new User("BOB", 240));
+		System.out.println(userController.queryUsers());
 		((ClassPathXmlApplicationContext)ctx).close();
 	}
 	
