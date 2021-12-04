@@ -1,10 +1,7 @@
 package case04;
 
-import java.util.Arrays;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.study.spring.case03.Cash;
 
 
 
