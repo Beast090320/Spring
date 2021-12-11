@@ -2,6 +2,8 @@ package com.study.spring.case04.mvc.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -53,7 +55,7 @@ public class UserServiceImpl implements UserService {
 	public List<User> queryUsers(int minAge, int maxAge) {
 		return userDao.queryUsers().stream()
 				.filter(u -> u.getAge() >= minAge && u.getAge() <= maxAge)
-				.toList();
+				.collect(Collectors.toList()); //Java8 打法
 	}
 
 	@Override
