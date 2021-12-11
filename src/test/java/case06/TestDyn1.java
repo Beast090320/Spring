@@ -11,7 +11,7 @@ public class TestDyn1 {
 		/*傳統
 		 *Calc ca = new CalcImpl();
 		 *System.out.println(ca.add(10, 20));
-		*/
+		 */
 		
 		Calc calc = (Calc) new ProxyUtil(new CalcImpl()).getProxy();
 		int sum = calc.add(10, 20);
